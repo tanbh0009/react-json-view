@@ -201,7 +201,8 @@ function getExampleJson1() {
         string_number: '1234',
         date: new Date(),
         moment: Moment(),
-        regexp: /[0-9]/gi
+        regexp: /[0-9]/gi,
+        bigint: BigInt("218156890633846840"),
     };
 }
 

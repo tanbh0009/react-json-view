@@ -18,7 +18,8 @@ import {
     JsonNull,
     JsonRegexp,
     JsonString,
-    JsonUndefined
+    JsonUndefined,
+    JsonBigInt
 } from './DataTypes/DataTypes';
 
 //clibboard icon
@@ -242,6 +243,8 @@ class VariableEditor extends React.PureComponent {
                 return <JsonDate value={variable.value} {...props} />;
             case 'regexp':
                 return <JsonRegexp value={variable.value} {...props} />;
+            case 'bigint':
+                return <JsonBigInt value={variable.value} {...props} />;
             default:
                 // catch-all for types that weren't anticipated
                 return (
